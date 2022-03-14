@@ -14,7 +14,7 @@ What i learned in this one
 Could be better with 
 
 <ul>
-    <li>Adjusting the images somehow to get them to conform to the same size without cropping or deformaing the image</li>
+    <li>Adjusting the images somehow to get them to conform to the same size without cropping or stretching the image</li>
     <li>Automated slide transitions</li>
     <li>Text on slide</li>
     <li>Indicator of wich slide is on with some visual cues like points on the bottom</li>
