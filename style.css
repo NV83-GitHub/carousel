@@ -1,0 +1,94 @@
+/*RESETS*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: inherit;
+  /* aspect-ratio: 16/9; */
+}
+
+/*********/
+/*CLASSES*/
+/*********/
+
+.carousel {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-item {
+  max-width: inherit;
+  display: none;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  animation: fadeAnimation 0.5s;
+}
+
+.carousel-actions {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/*********/
+/*BUTTONS*/
+/*********/
+
+#next-btn,
+#previous-btn {
+  display: inline-block;
+  background-color: rgba(240, 248, 255, 0.185);
+  color: rgba(2, 54, 100, 0.767);
+  font-weight: 900;
+  font-size: larger;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#next-btn:hover,
+#previous-btn:hover #next-btn:focus,
+#previous-btn:focus {
+  background-color: rgba(240, 248, 255, 0.377);
+}
+
+
+/**************/
+/* ANIMATIONS */
+/**************/
+
+@keyframes fadeAnimation {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
